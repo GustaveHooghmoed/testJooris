@@ -1,0 +1,8 @@
+name: JorisDev
+description: hoi
+version: 0.04
+author: MichelJoris
+main: me.joris.plugin.main
+commands:
+   testjoris:
+      description: kaas
