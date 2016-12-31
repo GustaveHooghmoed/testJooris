@@ -9,10 +9,10 @@ public class testCommand implements CommandExecutor {
 
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-		if(args[0].length() > 0){
-			sender.sendMessage(ChatColor.GOLD + "hallo wereld");
+	if(args.length > 0){
+            sender.sendMessage(ChatColor.GOLD + "hallo wereld");
         } else {
-        	sender.sendMessage(ChatColor.GOLD + "Oops, te weinig argumentjes");
+            sender.sendMessage(ChatColor.GOLD + "Oops, te weinig argumentjes");
         }
 		return false;
 	}
