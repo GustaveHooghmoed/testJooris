@@ -1,2 +1,2 @@
 # testJooris
-TestJoris new Core?!
+Welkom welkom bij TestJoris Project.
