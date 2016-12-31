@@ -24,7 +24,7 @@ public class main extends JavaPlugin {
 		if(p.isOp()){
 			 p.sendMessage(ChatColor.translateAlternateColorCodes('&',"§7Testcore is ingeschakeld!"));
 			    Bukkit.setWhitelist(true);
-			    p.sendMessage(ChatColor.translateAlternateColorCodes('&',"§7Whitelist is ingeschakeld!"));
+			    p.sendMessage(ChatColor.translateAlternateColorCodes('&',"§7Whitelist is ingeschakeld."));
 			    p.sendMessage(ChatColor.translateAlternateColorCodes('&',"&7Momentele Whitelist: " + whitelisted.toString()));
 		}
     }
