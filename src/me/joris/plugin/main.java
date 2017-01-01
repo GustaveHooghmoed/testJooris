@@ -31,10 +31,14 @@ public class main extends JavaPlugin {
     getServer().getPluginManager().registerEvents(new MyListener(), this);
     MyScoreboard.setScoreboard();
     MyScoreboard.setScoreboardforName();
-    Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&',"§7Testcore is ingeschakeld!!"));
-    Bukkit.setWhitelist(true);
-    Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&',"§7Whitelist is ingeschakeld!!"));
-    Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&',"Momentele Whitelist: " + whitelisted.toString()));
+    
+    // MICHEL METHODES
+    if (!api.getVault() ) {
+        System.out.println(String.format("[%s] - Disabled due to no Vault dependency found!", getDescription().getName()));
+        getServer().getPluginManager().disablePlugin(this);
+        return;
+    }
+    
     try {
 		WebsocketServer.runServer();
 	} catch (InterruptedException | IOException e) {
@@ -45,7 +49,7 @@ public class main extends JavaPlugin {
  }	
 	
 	public void onDisable(){
-		Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&',"§7Testcore is uitgeschakeld!"));
+	
 		
 	}
 
