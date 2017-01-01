@@ -6,3 +6,5 @@ main: me.joris.plugin.main
 commands:
    testjoris:
       description: kaas
+   aspc:
+      description: kaas

@@ -40,7 +40,7 @@
         <excludeScope>system</excludeScope>
                 <excludes>META-INF/*.SF</excludes>
                 <excludes>META-INF/*.DSA</excludes>
-                <excludes>META-INF/*.RSA</excludes>
+                <excludes>META-INF</excludes>
                 <excludeGroupIds>junit,org.mockito,org.hamcrest</excludeGroupIds>
                 <outputDirectory>${project.build.directory}/classes</outputDirectory>
           <source>1.8</source>
@@ -94,13 +94,6 @@
             <version>1.11-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
     </dependency>
-
-		<dependency>
-			<groupId>org.eclipse.jetty</groupId>
-			<artifactId>jetty-server</artifactId>
-			<version>9.0.0.RC0</version>
-			<scope>compile</scope>
-		</dependency>
 </dependencies>
    
 	<version>1</version>
